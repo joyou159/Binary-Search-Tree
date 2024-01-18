@@ -39,7 +39,7 @@ This C++ implementation of a Binary Search Tree (BST) provides various functiona
     bst.clear();
     ```
 
-## Method Documentation
+## Methods Documentation
 
 ### `drawTree(std::vector<T>& el, int start, int end)`
 
