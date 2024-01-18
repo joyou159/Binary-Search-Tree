@@ -48,11 +48,6 @@ This C++ implementation of a Binary Search Tree (BST) provides various functiona
 - The `get_size` and `get_height` methods provide information about the size and height of the tree.
 - The `clear` method deallocates memory used by the nodes.
 
-## Notes
-
-- Make sure to include the necessary header files (`<vector>`, `<stack>`, `<queue>`, `<algorithm>`, `<limits.h>`, `<cmath>`) when using this implementation.
-- This implementation assumes that the keys in the tree are unique.
-
 ## Contribution
 
 Contributions are welcome! If you find any issues or have improvements, please open an issue or submit a pull request.
