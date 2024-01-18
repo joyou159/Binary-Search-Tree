@@ -39,14 +39,79 @@ This C++ implementation of a Binary Search Tree (BST) provides various functiona
     bst.clear();
     ```
 
-## Implementation Details
+## Method Descriptions
 
-- The BST is implemented using a template class to allow for different data types.
-- The `Node` struct represents a node in the BST, containing data and pointers to the left and right children.
-- The implementation includes both recursive and iterative traversal methods.
-- The `isBST` method checks if the tree is a valid Binary Search Tree.
-- The `get_size` and `get_height` methods provide information about the size and height of the tree.
-- The `clear` method deallocates memory used by the nodes.
+### `drawTree(std::vector<T>& el, int start, int end)`
+
+Constructs a BST from a sorted vector given the starting and ending indices of the vector or sub-vector.
+
+### `insertInSubTree(Node<T>* ptr, T key)`
+
+Inserts a new key into the BST given the key and the root of the sub-tree.
+
+### `find(Node<T>* ptr, T key)`
+
+Searches for a specific key in the BST given the value and the root of the subtree, returning a pointer to the corresponding node.
+
+### `separate(Node<T>* ptr, T key)`
+
+Separates the node with the given key value from the BST, returning a pointer to the place where the separation has occurred.
+
+### `leftmostLeaf(Node<T>* ptr)`
+
+Returns the leftmost node of a BST, helping in the case of separating a node with two children.
+
+### `compare(Node<T>* ptr)`
+
+Ensures that the given tree is a BST by passing the root of the subtree.
+
+### `isSubtreeGreater(Node<T>* ptr, T key)`
+
+Ensures that any key in the given subtree is greater than the given key.
+
+### `isSubtreeLesser(Node<T>* ptr, T key)`
+
+Ensures that any key in the given subtree is lesser than the given key.
+
+### `height(Node<T>* ptr)`
+
+Returns the height of the given subtree.
+
+### `inorder(Node<T>* ptr, std::vector<T>& vect)`
+
+Traverses the BST recursively in an inorder manner and stores its keys in the referenced vector.
+
+### `preorder(Node<T>* ptr, std::vector<T>& vect)`
+
+Traverses the BST recursively in a preorder manner and stores its keys in the referenced vector.
+
+### `postorder(Node<T>* ptr, std::vector<T>& vect)`
+
+Traverses the BST recursively in a postorder manner and stores its keys in the referenced vector.
+
+### `inorderPouring(Node<T>* ptr)`
+
+Traverses the BST iteratively in an inorder manner and returns its keys stored in a vector using one stack.
+
+### `postorderPouring(Node<T>* ptr)`
+
+Traverses the BST iteratively in a postorder manner and returns its keys stored in a vector using two stacks.
+
+### `preorderPouring(Node<T>* ptr)`
+
+Traverses the BST iteratively in a preorder manner and returns its keys stored in a vector using one stack.
+
+### `PostorderClear(Node<T>* ptr)`
+
+Similar to `postorderPouring` but returns a vector of pointers instead of keys, useful for clearing the tree.
+
+### `treeSize(Node<T>* ptr)`
+
+Returns the size of the Binary Search subtree.
+
+### `levelOrder(Node<T>* ptr)`
+
+Traverses the BST iteratively in breadth order manner and returns its keys stored in a vector using one queue.
 
 ## Contribution
 
